@@ -36,8 +36,8 @@ AImzy is a mobile app designed to provide accessible, skill-based education for 
 Prerequisites : Flutter (latest stable version), Firebase CLI, Dart SDK.
 Steps to Run Aimzy Locally :
 1. Clone the repository
-   git clone
-   cd aimzy
+   - git clone https://github.com/Poorvi-Naveen/EducationForUnderserved
+   - cd aimzy
 2. Install dependencies: flutter pub get
 3. Set up Firebase: Create a Firebase project in the Firebase Console. Download and place google-services.json (for Android) and GoogleService-Info.plist (for iOS) in the appropriate directories.
 4. Run the app: flutter run
