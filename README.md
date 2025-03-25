@@ -26,10 +26,11 @@ AImzy is a mobile app designed to provide accessible, skill-based education for 
 - Chapters– Progress bar for completed chapters along with chapter description containing solved examples.
 - Exercise Page – Interactive exercises with various question formats.
 
-|  Home Screen  | Courses Page | Chapters Page | Chat Screen  |  
-|-------------|-------------|-------------|
-![IMG-20250325-WA0025](https://github.com/user-attachments/assets/b0d2840a-4c60-4ca8-9449-a94e87aa4e91) |![IMG-20250325-WA0026](https://github.com/user-attachments/assets/1dd5a435-ef97-490f-a0f4-098adfcb8677) | ![IMG-20250325-WA0028](https://github.com/user-attachments/assets/fbc73409-bb73-4aee-befc-8414fa2af1fb) | ![Screenshot_2025-03-25-21-47-11-83_ba7757fddbb0f6a5aa423e25f48674b8](https://github.com/user-attachments/assets/7a97b24d-9d14-43bc-b166-bd9e17c952a3)
+## App Screenshots 📱
 
+| Home Screen | Courses Page | Chapters Page | Chat Screen |
+|------------|-------------|--------------|-------------|
+| ![Home](https://github.com/user-attachments/assets/b0d2840a-4c60-4ca8-9449-a94e87aa4e91) | ![Courses](https://github.com/user-attachments/assets/1dd5a435-ef97-490f-a0f4-098adfcb8677) | ![Chapters](https://github.com/user-attachments/assets/fbc73409-bb73-4aee-befc-8414fa2af1fb) | ![Chat](https://github.com/user-attachments/assets/7a97b24d-9d14-43bc-b166-bd9e17c952a3) |
 
 ## Installation & Setup
 Prerequisites : Flutter (latest stable version), Firebase CLI, Dart SDK.
