@@ -1,9 +1,11 @@
 # AImzy
-## Learn, Grow, Shine!
+### Learn, Grow, Shine!
 
-## EducationForUnderserved
+#### EducationForUnderserved
 
 AImzy - Skill-Based Learning App
+![logo](https://github.com/user-attachments/assets/b2076b6c-da5a-4c77-9503-b963f804313f)
+
 
 Empowering Education with AI & Interactive Learning 🤖 
 
@@ -23,6 +25,11 @@ AImzy is a mobile app designed to provide accessible, skill-based education for 
 - Courses Page – Displays registered courses.
 - Chapters– Progress bar for completed chapters along with chapter description containing solved examples.
 - Exercise Page – Interactive exercises with various question formats.
+![IMG-20250325-WA0025](https://github.com/user-attachments/assets/b0d2840a-4c60-4ca8-9449-a94e87aa4e91)
+![IMG-20250325-WA0026](https://github.com/user-attachments/assets/1dd5a435-ef97-490f-a0f4-098adfcb8677)
+![IMG-20250325-WA0028](https://github.com/user-attachments/assets/fbc73409-bb73-4aee-befc-8414fa2af1fb)
+![Screenshot_2025-03-25-21-47-11-83_ba7757fddbb0f6a5aa423e25f48674b8](https://github.com/user-attachments/assets/7a97b24d-9d14-43bc-b166-bd9e17c952a3)
+
 
 ## Installation & Setup
 Prerequisites : Flutter (latest stable version), Firebase CLI, Dart SDK.
@@ -35,7 +42,7 @@ Steps to Run Aimzy Locally :
 4. Run the app: flutter run
 
 ## Contributors ✨
-- Parnika D Bhat
-- Revathi R
-- Padmashree Jain D
-- Poorvi Naveen
+- Parnika D Bhat (parnika0905@gmail.com)
+- Revathi R (revathimaniraj@gmail.com)
+- Padmashree Jain D (padmashreejaind@gmail.com)
+- Poorvi Naveen (poorvinaveen3101@gmail.com)
