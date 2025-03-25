@@ -29,7 +29,7 @@ AImzy is a mobile app designed to provide accessible, skill-based education for 
 ## App Screenshots 📱
 
 | Home Screen | Courses Page | Chapters Page | Chat Screen |
-|------------|-------------|--------------|-------------|
+|---------------|---------------|-------------|------------|
 | ![Home](https://github.com/user-attachments/assets/b0d2840a-4c60-4ca8-9449-a94e87aa4e91) | ![Courses](https://github.com/user-attachments/assets/1dd5a435-ef97-490f-a0f4-098adfcb8677) | ![Chapters](https://github.com/user-attachments/assets/fbc73409-bb73-4aee-befc-8414fa2af1fb) | ![Chat](https://github.com/user-attachments/assets/7a97b24d-9d14-43bc-b166-bd9e17c952a3) |
 
 ## Installation & Setup
