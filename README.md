@@ -1,4 +1,4 @@
-![pastsessions](https://github.com/user-attachments/assets/8a9bb769-0946-4fe0-ac84-f68721552f3e)# AImzy
+# AImzy
 ### Learn, Grow, Shine!
 
 #### EducationForUnderserved
