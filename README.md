@@ -30,11 +30,11 @@ AImzy is a mobile app designed to provide accessible, skill-based education for 
 
 | Home Screen | Courses Page | Chapters Page | Excercise(MCQ Type) | Excercise(Enter Input) | 
 |---------------|---------------|-------------|------------|------------|
-| ![Home]![homescreen](https://github.com/user-attachments/assets/dcc8734e-6a3d-40cc-82ea-85b34a1b19d0) | ![Courses]![courses](https://github.com/user-attachments/assets/27feadfc-c1a7-4672-a7ea-0c94512a9585) | ![Chapters]![chapters](https://github.com/user-attachments/assets/2f5ddb01-bd64-45c1-96cf-d7ec3e7f2c35) | ![Excerise1]![excercise1](https://github.com/user-attachments/assets/7f5c8107-a338-4cf2-9ed3-6899dbd33b7b) | ![Excerise1]![excercise2](https://github.com/user-attachments/assets/5558b5b1-dfbd-4e0d-b00e-10f50ea2f599) |
+| ![Home](https://github.com/user-attachments/assets/dcc8734e-6a3d-40cc-82ea-85b34a1b19d0) | ![Courses](https://github.com/user-attachments/assets/27feadfc-c1a7-4672-a7ea-0c94512a9585) | ![Chapters](https://github.com/user-attachments/assets/2f5ddb01-bd64-45c1-96cf-d7ec3e7f2c35) | ![Excerise1](https://github.com/user-attachments/assets/7f5c8107-a338-4cf2-9ed3-6899dbd33b7b) | ![Excerise1](https://github.com/user-attachments/assets/5558b5b1-dfbd-4e0d-b00e-10f50ea2f599) |
 
-| Splash Screen | Signup Page | Chapters Page | Chat Screen | Past Chat Sessions |
-|---------------|---------------|-------------|------------|------------|
-| ![Splash]!![SplashScreen](https://github.com/user-attachments/assets/79b5f263-69f1-4e78-97e9-37c968a4c948) | ![Signup]!![UserSignUp](https://github.com/user-attachments/assets/47f0cbc8-a605-4350-9459-f5be058642ce) | ![Chapters]![chapters](https://github.com/user-attachments/assets/2f5ddb01-bd64-45c1-96cf-d7ec3e7f2c35) | ![Chat](https://github.com/user-attachments/assets/7a97b24d-9d14-43bc-b166-bd9e17c952a3) | ![PastchatSessions]![pastsessions](https://github.com/user-attachments/assets/652d67e0-6450-4fe7-9e7b-d920c2c2510a) |
+| Splash Screen | Signup Page  | Chat Screen | Past Chat Sessions |
+|---------------|---------------|------------|------------|
+| ![SplashScreen](https://github.com/user-attachments/assets/79b5f263-69f1-4e78-97e9-37c968a4c948) | ![UserSignUp](https://github.com/user-attachments/assets/47f0cbc8-a605-4350-9459-f5be058642ce) | ![Chat](https://github.com/user-attachments/assets/7a97b24d-9d14-43bc-b166-bd9e17c952a3) | ![PastchatSessions](https://github.com/user-attachments/assets/652d67e0-6450-4fe7-9e7b-d920c2c2510a) |
 
 ## Installation & Setup
 Prerequisites : Flutter (latest stable version), Firebase CLI, Dart SDK.
