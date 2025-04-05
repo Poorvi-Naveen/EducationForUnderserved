@@ -26,11 +26,13 @@ AImzy is a mobile app designed to provide accessible, skill-based education for 
 - Chapters– Progress bar for completed chapters along with chapter description containing solved examples.
 - Exercise Page – Interactive exercises with various question formats.
 
-## App Screenshots 📱
+## App Screenshots
 
 | Home Screen | Courses Page | Chapters Page | Excercise(MCQ Type) | Excercise(Enter Input) | 
 |---------------|---------------|-------------|------------|------------|
 | ![Home](https://github.com/user-attachments/assets/dcc8734e-6a3d-40cc-82ea-85b34a1b19d0) | ![Courses](https://github.com/user-attachments/assets/27feadfc-c1a7-4672-a7ea-0c94512a9585) | ![Chapters](https://github.com/user-attachments/assets/2f5ddb01-bd64-45c1-96cf-d7ec3e7f2c35) | ![Excerise1](https://github.com/user-attachments/assets/7f5c8107-a338-4cf2-9ed3-6899dbd33b7b) | ![Excerise1](https://github.com/user-attachments/assets/5558b5b1-dfbd-4e0d-b00e-10f50ea2f599) |
+
+
 
 | Splash Screen | Signup Page  | Chat Screen | Past Chat Sessions |
 |---------------|---------------|------------|------------|
@@ -47,8 +49,9 @@ Steps to Run Aimzy Locally :
 4. Run the app: flutter run
 
 ## MVP Link
+You can download our app from the below link by clicking on the .apk file and experience the features of the app.
+
 https://drive.google.com/drive/folders/1rkHAr0N5hI4hz_L4VtgXl0LKs3QBxQmL
-You can download our app from the above link by clicking on the .apk file and experience the features of the app.
 
 ## Contributors ✨
 - Parnika D Bhat (parnika0905@gmail.com)
