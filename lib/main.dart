@@ -477,7 +477,7 @@
 //   if (kIsWeb) {
 //     await Firebase.initializeApp(
 //       options: const FirebaseOptions(
-//         apiKey: "AIzaSyBKiVjiWlU_00Nbi3ual67CL6FPhRI3WtQ",
+//         apiKey: "Enter your API key",
 //         authDomain: "education-app-2ff8c.firebaseapp.com",
 //         projectId: "education-app-2ff8c",
 //         storageBucket: "education-app-2ff8c.firebasestorage.app",
