@@ -41,10 +41,14 @@ Prerequisites : Flutter (latest stable version), Firebase CLI, Dart SDK.
 Steps to Run Aimzy Locally :
 1. Clone the repository
    - git clone https://github.com/Poorvi-Naveen/EducationForUnderserved
-   - cd aimzy
+   - cd EducationForUnderserved
 2. Install dependencies: flutter pub get
-3. Set up Firebase: Create a Firebase project in the Firebase Console. Download and place google-services.json (for Android) and GoogleService-Info.plist (for iOS) in the appropriate directories.
+3. Set up Firebase: Create a Firebase project in the Firebase Console. Download and place google-services.json (for Android) in the appropriate directories.
 4. Run the app: flutter run
+
+## MVP Link
+https://drive.google.com/drive/folders/1rkHAr0N5hI4hz_L4VtgXl0LKs3QBxQmL
+You can download our app from the above link by clicking on the .apk file and experience the features of the app.
 
 ## Contributors ✨
 - Parnika D Bhat (parnika0905@gmail.com)
