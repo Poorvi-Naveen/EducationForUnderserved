@@ -55,6 +55,6 @@ https://drive.google.com/drive/folders/1rkHAr0N5hI4hz_L4VtgXl0LKs3QBxQmL
 
 ## Contributors ✨
 - Parnika D Bhat (parnika0905@gmail.com)
-- Revathi R (revathimaniraj@gmail.com)
+- Revathi R (revathimaniraj12@gmail.com)
 - Padmashree Jain D (padmashreejaind@gmail.com)
 - Poorvi Naveen (poorvinaveen3101@gmail.com)
