@@ -50,6 +50,11 @@ dependencies:
   shared_preferences: ^2.5.2
   file_picker: ^9.2.0
   percent_indicator: ^4.2.4
+  flutter_downloader: ^1.12.0
+  path_provider: ^2.1.5
+  url_launcher: ^6.3.2
+  open_filex: ^4.7.0
+  permission_handler: ^12.0.1
 
 dev_dependencies:
   flutter_test:
@@ -78,6 +83,23 @@ flutter:
     - assets/light.png
     - assets/ratio3.png
     - assets/body.png
+    - assets/ABS.jpg
+    - assets/community_2.png
+    - assets/community_3.png
+    - assets/community_1.png
+    - assets/mindful_1.png
+    - assets/mindful_2.png
+    - assets/mindful_3.png
+    - assets/planet_1.png
+    - assets/planet_2.png 
+    - assets/planet_3.png
+    - assets/truth_1.png
+    - assets/truth_2.png
+    - assets/truth_3.png
+    - assets/peace_1.png
+    - assets/peace_2.png
+    - assets/peace_3.png
+    
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 
