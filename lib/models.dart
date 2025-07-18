@@ -1,93 +1,5 @@
-// class Exercise {
-//   final String name;
-//   final String description;
-//   bool isCompleted;
-
-//   Exercise({
-//     required this.name,
-//     required this.description,
-//     this.isCompleted = false,
-//   });
-// }
-
-// class Chapter {
-//   final String title;
-//   final String introduction;
-//   final List<Exercise> exercises;
-//   bool isCompleted;
-
-//   Chapter({
-//     required this.title,
-//     required this.introduction,
-//     required this.exercises,
-//     this.isCompleted = false,
-//   });
-// }
-
-// class Course {
-//   final String title;
-//   final String description;
-//   final String imageUrl;
-//   final List<Chapter> chapters;
-
-//   Course({
-//     required this.title,
-//     required this.description,
-//     this.imageUrl = '',
-//     required this.chapters,
-//   });
-// }
-
-// // Sample data with Exercise objects
-// final List<Course> courses = [
-//   Course(
-//     title: 'Flutter Development',
-//     description: 'Learn to build cross-platform mobile apps with Flutter',
-//     imageUrl: 'assets/flutter.png',
-//     chapters: [
-//       Chapter(
-//         title: 'Introduction to Flutter',
-//         introduction:
-//             'In this chapter, you will learn the basics of Flutter framework and Dart programming language.',
-//         exercises: [
-//           Exercise(
-//             name: 'Install Flutter SDK and required tools',
-//             description: 'Set up Flutter development environment',
-//           ),
-//           Exercise(
-//             name: 'Create your first Flutter app',
-//             description: 'Build a simple "Hello World" app',
-//           ),
-//           Exercise(
-//             name: 'Understand the basic widget structure',
-//             description: 'Learn about Stateless and Stateful Widgets',
-//           ),
-//         ],
-//       ),
-//       Chapter(
-//         title: 'UI Components',
-//         introduction:
-//             'This chapter covers the essential UI components in Flutter.',
-//         exercises: [
-//           Exercise(
-//             name: 'Work with Text and Button widgets',
-//             description: 'Learn how to use Text and Button widgets',
-//           ),
-//           Exercise(
-//             name: 'Implement layouts using Row, Column, and Container',
-//             description: 'Build flexible UIs using layout widgets',
-//           ),
-//           Exercise(
-//             name: 'Create scrollable lists with ListView',
-//             description: 'Understand how to use ListView',
-//           ),
-//         ],
-//       ),
-//     ],
-//   ),
-// ];
-
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart';
 
 class Exercise {
   final String question;
@@ -152,6 +64,7 @@ class Course {
   final String description;
   final String imageUrl;
   final DocumentReference reference;
+  final String? downloadUrl;
 
   Course({
     required this.id,
@@ -159,6 +72,7 @@ class Course {
     required this.description,
     this.imageUrl = '',
     required this.reference,
+    this.downloadUrl,
   });
 
   factory Course.fromFirestore(DocumentSnapshot<Map<String, dynamic>> doc) {
@@ -169,6 +83,88 @@ class Course {
       description: data['description'] ?? '',
       imageUrl: data['imageUrl'] ?? '',
       reference: doc.reference,
+      downloadUrl: data['downloadUrl'],
+    );
+  }
+}
+
+class ChapterContent {
+  final List<String> outcomes;
+  final List<Topic> topics;
+  final List<QuestionAnswer> solvedExamples;
+
+  ChapterContent({
+    required this.outcomes,
+    required this.topics,
+    required this.solvedExamples,
+  });
+
+  factory ChapterContent.fromMap(Map<String, dynamic> map) {
+    debugPrint("❌ ❌ Incoming ChapterContent: $map");
+    return ChapterContent(
+      outcomes:
+          map['outcomes'] != null ? List<String>.from(map['outcomes']) : [],
+      topics:
+          (map['topics'] as List? ?? [])
+              .map((t) => Topic.fromMap(t as Map<String, dynamic>))
+              .toList(),
+      solvedExamples:
+          (map['solvedExamples'] as List? ?? [])
+              .map((e) => QuestionAnswer.fromMap(e as Map<String, dynamic>))
+              .toList(),
+    );
+  }
+}
+
+class QuestionAnswer {
+  final String question;
+  final String answer;
+
+  QuestionAnswer({required this.question, required this.answer});
+
+  factory QuestionAnswer.fromMap(Map<String, dynamic> map) {
+    return QuestionAnswer(
+      question: map['question'] ?? '',
+      answer: map['answer'] ?? '',
+    );
+  }
+}
+
+class Topic {
+  final String title;
+  final List<String> explanation;
+  final TableData? table;
+
+  Topic({required this.title, required this.explanation, this.table});
+
+  factory Topic.fromMap(Map<String, dynamic> map) {
+    List<String> explanationList = [];
+    if (map['explanation'] is List) {
+      explanationList = List<String>.from(map['explanation']);
+    } else if (map['explanation'] is String) {
+      explanationList = [map['explanation']];
+    }
+    return Topic(
+      title: map['title'] ?? '',
+      explanation: explanationList,
+      table: map['table'] != null ? TableData.fromMap(map['table']) : null,
+    );
+  }
+}
+
+class TableData {
+  final List<String> headers;
+  final List<Map<String, String>> rows;
+
+  TableData({required this.headers, required this.rows});
+
+  factory TableData.fromMap(Map<String, dynamic> map) {
+    return TableData(
+      headers: map['headers'] != null ? List<String>.from(map['headers']) : [],
+      rows:
+          (map['rows'] as List? ?? [])
+              .map((row) => Map<String, String>.from(row))
+              .toList(),
     );
   }
 }
@@ -184,4 +180,8 @@ Chapter chapterFromFirestore(DocumentSnapshot doc) {
 
 Exercise exerciseFromFirestore(DocumentSnapshot doc) {
   return Exercise.fromFirestore(doc as DocumentSnapshot<Map<String, dynamic>>);
+}
+
+ChapterContent chapterContentFromMap(Map<String, dynamic> map) {
+  return ChapterContent.fromMap(map);
 }

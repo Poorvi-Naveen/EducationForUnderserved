@@ -1,229 +1,7 @@
-// import 'package:flutter/material.dart';
-
-// void main() {
-//   WidgetsFlutterBinding.ensureInitialized();
-//   runApp(MyApp());
-// }
-
-// class MyApp extends StatelessWidget {
-//   const MyApp({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       title: 'AIMZY',
-//       theme: ThemeData(primarySwatch: Colors.blue),
-//       home: SplashScreen(key: Key('splash')),
-//     );
-//   }
-// }
-
-// class SplashScreen extends StatefulWidget {
-//   const SplashScreen({required Key key}) : super(key: key);
-
-//   @override
-//   _SplashScreenState createState() => _SplashScreenState();
-// }
-
-// class _SplashScreenState extends State<SplashScreen>
-//     with SingleTickerProviderStateMixin {
-//   late AnimationController _controller;
-//   late Animation<double> _animation;
-
-//   @override
-//   void initState() {
-//     super.initState();
-
-//     _controller = AnimationController(
-//       vsync: this,
-//       duration: const Duration(seconds: 2),
-//     );
-
-//     _animation = Tween<double>(
-//       begin: 0.5,
-//       end: 1.0,
-//     ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));
-
-//     _controller.forward();
-
-//     _initializeApp();
-//   }
-
-//   Future<void> _initializeApp() async {
-//     await Future.delayed(const Duration(seconds: 3));
-
-//     if (mounted) {
-//       Navigator.of(
-//         context,
-//       ).pushReplacement(MaterialPageRoute(builder: (context) => LoginPage()));
-//     }
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body: Stack(
-//         fit: StackFit.expand,
-//         children: [
-//           Image.asset("assets/splash.jpeg", fit: BoxFit.cover),
-//           Center(
-//             child: ScaleTransition(
-//               scale: _animation,
-//               child: FadeTransition(
-//                 opacity: _animation,
-//                 child: Image.asset("assets/logo.png", height: 200),
-//               ),
-//             ),
-//           ),
-//           const Positioned(
-//             bottom: 50,
-//             left: 0,
-//             right: 0,
-//             child: Center(
-//               child: CircularProgressIndicator(
-//                 valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-//               ),
-//             ),
-//           ),
-//         ],
-//       ),
-//     );
-//   }
-// }
-
-// class LoginPage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body: Stack(
-//         fit: StackFit.expand,
-//         children: [
-//           Image.asset("assets/splash.jpeg", fit: BoxFit.cover),
-//           Center(
-//             child: Column(
-//               mainAxisSize: MainAxisSize.min,
-//               children: [
-//                 FadeTransition(
-//                   opacity: AlwaysStoppedAnimation(1.0),
-//                   child: Image.asset("assets/logo.png", height: 100),
-//                 ),
-//                 SizedBox(height: 30),
-//                 Column(
-//                   mainAxisSize: MainAxisSize.min,
-//                   children: [
-//                     TextField(
-//                       decoration: InputDecoration(
-//                         labelText: "Email",
-//                         border: OutlineInputBorder(),
-//                       ),
-//                     ),
-//                     SizedBox(height: 10),
-//                     TextField(
-//                       decoration: InputDecoration(
-//                         labelText: "Password",
-//                         border: OutlineInputBorder(),
-//                       ),
-//                       obscureText: true,
-//                     ),
-//                     SizedBox(height: 20),
-//                     ElevatedButton(onPressed: () {}, child: Text("Login")),
-//                     SizedBox(height: 10),
-//                     TextButton(
-//                       onPressed: () {
-//                         Navigator.push(
-//                           context,
-//                           MaterialPageRoute(builder: (context) => SignupPage()),
-//                         );
-//                       },
-//                       child: Text("Don't have an account? Sign up"),
-//                     ),
-//                   ],
-//                 ),
-//               ],
-//             ),
-//           ),
-//         ],
-//       ),
-//     );
-//   }
-// }
-
-// class SignupPage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body: Stack(
-//         fit: StackFit.expand,
-//         children: [
-//           Image.asset("assets/splash.jpeg", fit: BoxFit.cover),
-//           Center(
-//             child: Column(
-//               mainAxisSize: MainAxisSize.min,
-//               children: [
-//                 FadeTransition(
-//                   opacity: AlwaysStoppedAnimation(1.0),
-//                   child: Image.asset("assets/logo.png", height: 100),
-//                 ),
-//                 SizedBox(height: 30),
-//                 Column(
-//                   mainAxisSize: MainAxisSize.min,
-//                   children: [
-//                     TextField(
-//                       decoration: InputDecoration(
-//                         labelText: "Full Name",
-//                         border: OutlineInputBorder(),
-//                       ),
-//                     ),
-//                     SizedBox(height: 10),
-//                     TextField(
-//                       decoration: InputDecoration(
-//                         labelText: "Email",
-//                         border: OutlineInputBorder(),
-//                       ),
-//                     ),
-//                     SizedBox(height: 10),
-//                     TextField(
-//                       decoration: InputDecoration(
-//                         labelText: "Password",
-//                         border: OutlineInputBorder(),
-//                       ),
-//                       obscureText: true,
-//                     ),
-//                     SizedBox(height: 20),
-//                     ElevatedButton(
-//                       onPressed: () {
-//                         Navigator.push(
-//                           context,
-//                           MaterialPageRoute(builder: (context) => LoginPage()),
-//                         );
-//                       },
-//                       child: Text("Sign Up"),
-//                     ),
-//                     SizedBox(height: 10),
-//                     TextButton(
-//                       onPressed: () {
-//                         Navigator.push(
-//                           context,
-//                           MaterialPageRoute(builder: (context) => LoginPage()),
-//                         );
-//                       },
-//                       child: Text("Already signed up? Login"),
-//                     ),
-//                   ],
-//                 ),
-//               ],
-//             ),
-//           ),
-//         ],
-//       ),
-//     );
-//   }
-// }
-
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'main.dart';
+import 'civic_sense_popup.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -249,10 +27,21 @@ class LoginPageState extends State<LoginPage> {
           password: _passwordController.text,
         );
         if (mounted) {
-          Navigator.pushReplacement(
+          // Navigator.pushReplacement(
+          // context,
+          // MaterialPageRoute(builder: (context) => MainScreen()),
+          // );
+          final result = await Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => MainScreen()),
+            MaterialPageRoute(builder: (context) => CivicSensePage()),
           );
+
+          if (result == true && mounted) {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => MainScreen()),
+            );
+          }
         }
         // If login is successful, the auth state listener in main.dart will handle navigation to HomeScreen
       } on FirebaseAuthException catch (e) {
@@ -369,6 +158,8 @@ class SignupPageState extends State<SignupPage> {
   final TextEditingController _fullNameController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
+  final TextEditingController _dobController =
+      TextEditingController(); // Controller for Date of Birth
   final _formKey = GlobalKey<FormState>();
   String? _errorMessage;
 
@@ -398,6 +189,27 @@ class SignupPageState extends State<SignupPage> {
         setState(() {
           _errorMessage = e.message;
         });
+      }
+    }
+  }
+
+  void _selectDate(BuildContext context) async {
+    final DateTime? picked = await showDatePicker(
+      context: context,
+      initialDate: DateTime.now(),
+      firstDate: DateTime(1900),
+      lastDate: DateTime.now(),
+    );
+    if (picked != null) {
+      final age = DateTime.now().year - picked.year;
+      if (age < 8 || age > 16) {
+        _dobController.text = ''; // Clear the field if age is invalid
+        // ignore: use_build_context_synchronously
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('You must be between 8 and 16 years old')),
+        );
+      } else {
+        _dobController.text = "${picked.day}/${picked.month}/${picked.year}";
       }
     }
   }
@@ -477,6 +289,24 @@ class SignupPageState extends State<SignupPage> {
                             }
                             if (value.length < 6) {
                               return 'Password must be at least 6 characters long';
+                            }
+                            return null;
+                          },
+                        ),
+                        SizedBox(height: 10),
+                        TextFormField(
+                          controller: _dobController,
+                          style: TextStyle(color: Colors.white),
+                          decoration: InputDecoration(
+                            labelText: "Date of Birth",
+                            labelStyle: TextStyle(color: Colors.white),
+                            border: OutlineInputBorder(),
+                          ),
+                          readOnly: true,
+                          onTap: () => _selectDate(context),
+                          validator: (value) {
+                            if (value == null || value.isEmpty) {
+                              return 'Please select your date of birth';
                             }
                             return null;
                           },

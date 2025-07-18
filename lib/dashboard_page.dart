@@ -16,7 +16,7 @@ class Progress {
 }
 
 class DashboardPage extends StatelessWidget {
-  DashboardPage({Key? key}) : super(key: key);
+  DashboardPage({super.key});
 
   final List<Progress> userProgress = [
     Progress(
