@@ -7,13 +7,13 @@ AImzy - Skill-Based Learning App
 ![logo](https://github.com/user-attachments/assets/b2076b6c-da5a-4c77-9503-b963f804313f)
 
 
-Empowering Education with AI & Interactive Learning 🤖 
+Empowering Education with AI & Interactive Learning 
 
-AImzy is a mobile app designed to provide accessible, skill-based education for underserved communities while being open to all learners. It offers structured courses with interactive exercises like fill-in-the-blanks, case studies, image labeling, and MCQs, along with an AI-powered chat assistant🤖  for instant query resolution.
+AImzy is a mobile app designed to provide accessible, skill-based education for underserved communities while being open to all learners. It offers structured courses with interactive exercises like fill-in-the-blanks, case studies, image labeling, and MCQs, along with an AI-powered chat assistant for instant query resolution.
 
- ## Features ✨
+ ## Features
  1) Skill-Based Learning – Focuses on practical knowledge instead of traditional school curricula.
- 2) AI Chat Assistant 🤖  – Powered by Google Gemini 2.0 Flash version for student queries.
+ 2) AI Chat Assistant  – Powered by Google Gemini 2.0 Flash version for student queries.
  3) Interactive Exercises – Includes MCQs, image labeling, case studies, and more for active learning.
  4) User Authentication – Secure login/signup system.
  5) Assessments & Certification – Validate learning with tests and certifications (developing).
@@ -52,9 +52,3 @@ Steps to Run Aimzy Locally :
 You can download our app from the below link by clicking on the .apk file and experience the features of the app.
 
 https://drive.google.com/drive/folders/1rkHAr0N5hI4hz_L4VtgXl0LKs3QBxQmL
-
-## Contributors ✨
-- Parnika D Bhat (parnika0905@gmail.com)
-- Revathi R (revathimaniraj12@gmail.com)
-- Padmashree Jain D (padmashreejaind@gmail.com)
-- Poorvi Naveen (poorvinaveen3101@gmail.com)
